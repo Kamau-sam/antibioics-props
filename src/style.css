@@ -1,0 +1,55 @@
+body {
+  background: url(./image/antibiotics.webp);
+  background-size: cover;
+}
+
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.antibiotic-card {
+  background-color: rgb(248, 231, 81);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s;
+}
+
+.antibiotic-card:hover {
+  transform: scale(1.05);
+}
+
+.antibiotic-card p {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.antibiotic-card p.name {
+  color: #0056b3;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.antibiotic-card p.class,
+.antibiotic-card p.moa {
+  font-size: 16px;
+  color: #555;
+}
+
+.antibiotic-card p.bacterialcidal {
+  color: #008000;
+  font-weight: bold;
+}
+
+.antibiotic-card p.bacterialcidal.no {
+  color: #800000;
+}
